@@ -1,0 +1,12 @@
+module base
+{
+    model turret_proto_anim
+    {
+        mesh = turret_proto_anim
+    }
+
+    item handcraftturret
+    {
+        
+    }
+}
