@@ -1,12 +1,57 @@
 module base
 {
-    model turret_proto_anim
+    model handcraftturret
     {
         mesh = turret_proto_anim
     }
 
     item handcraftturret
     {
-        
+        DisplayName = AutoBurret,
+        DisplayCategory = weapons,
+        part leg1{
+            
+        }
+        part leg2{
+
+        }
+        part leg3{
+
+        }
+        part laptop{
+
+        }
+        part ammoholder{
+            container{
+
+            }
+        }
+        part gun{
+
+        }
+        part camera{
+
+        }
+    }
+    item laptop
+    {   
+        DisplayName = Laptop,
+        Icon  = laptop,
+        StaticModel       = ,
+    }
+    item planks{
+        DisplayName = Paited planks,
+        StaticModel = ,
+    }
+    recipe planks{
+        PercedWood = 1,
+        result: planks,
+    }
+    evolvedrecipe handcraftturret
+    {
+        laptop:1, base.CameraExpensive:1, planks:6, 
+        MaxItems: 1,
+        ResultItem: handcraftturret,
+        Name: Craft Turret,
     }
 }
