@@ -9,35 +9,22 @@ module base
     {
         DisplayName = AutoBurret,
         DisplayCategory = weapons,
-        part leg1{
-            
-        }
-        part leg2{
-
-        }
-        part leg3{
-
-        }
-        part laptop{
-
-        }
+        type = moveable,
+        weight = 6.0,
+        StaticModel = turret_proto_anim
+        worldstaticmodel = handcraftturret.model,
+        recipe = handcraftturret.recipe,
         part ammoholder{
             container{
-
+                cappacity = 60,
             }
-        }
-        part gun{
-
-        }
-        part camera{
-
         }
     }
     item laptop
     {   
         DisplayName = Laptop,
         Icon  = laptop,
-        StaticModel       = ,
+        StaticModel = ,
     }
     item planks{
         DisplayName = Paited planks,
@@ -47,9 +34,11 @@ module base
         PercedWood = 1,
         result: planks,
     }
-    evolvedrecipe handcraftturret
+    recipe handcraftturret
     {
-        laptop:1, base.CameraExpensive:1, planks:6, 
+        keep hammer/ballpeenhammer/screwdriver/saw/gardensaw/,
+        laptop,base.CameraExpensive,planks = 6, 
+
         MaxItems: 1,
         ResultItem: handcraftturret,
         Name: Craft Turret,
