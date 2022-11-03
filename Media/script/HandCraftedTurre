@@ -14,12 +14,13 @@ module base
         StaticModel = turret_proto_anim
         worldstaticmodel = handcraftturret.model,
         recipe = handcraftturret.recipe,
-        part ammoholder{
+        part base.item.backpack{
             container{
                 cappacity = 60,
             }
         }
     }
+
     item laptop
     {   
         DisplayName = Laptop,
