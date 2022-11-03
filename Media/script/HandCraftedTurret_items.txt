@@ -1,19 +1,19 @@
 module base
 {
-    model handcraftturret
+    model item_handcraftturret
     {
         mesh = turret_proto_anim
     }
 
     item handcraftturret
     {
-        DisplayName = AutoBurret,
-        DisplayCategory = weapons,
-        type = moveable,
+        DisplayName =AutoBurret,
+        DisplayCategory =weapons,
+        type =moveable,
         weight = 6.0,
-        StaticModel = turret_proto_anim
-        worldstaticmodel = handcraftturret.model,
-        recipe = handcraftturret.recipe,
+        StaticModel =turret_proto_anim
+        worldstaticmodel =handcraftturret.model,
+        recipe =handcraftturret.recipe,
         part base.item.backpack{
             container{
                 cappacity = 60,
@@ -24,12 +24,12 @@ module base
     item laptop
     {   
         DisplayName = Laptop,
-        Icon  = laptop,
-        StaticModel = ,
+        Icon=laptop,
+        StaticModel=10119_Laptop_Computer_v2_max2011_SG_it2,
     }
     item planks{
-        DisplayName = Paited planks,
-        StaticModel = ,
+        DisplayName=Paited planks,
+        StaticModel=customplank,
     }
     recipe planks{
         PercedWood = 1,
