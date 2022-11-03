@@ -1,0 +1,18 @@
+module base
+{
+    
+    model item_handcraftturret
+    {
+        mesh=turret_proto_anim
+    }
+
+    item handcraftturret
+    {
+        DisplayName =AutoBurret,
+        DisplayCategory=Weapon,
+        Type=moveable,
+        Weight=6.0,
+        Icon=Blank,
+        WorldStaticModel=item_handcraftturret,
+    }
+}
